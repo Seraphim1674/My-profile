@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
-        /* Core Aesthetic */
+        /* Core Aesthetic - Updated to MLM palette */
         body {
             font-family: 'Quicksand', sans-serif;
             margin: 0;
@@ -17,7 +17,8 @@
             align-items: center;
             justify-content: center;
             overflow: hidden; 
-            background: linear-gradient(135deg, #5BCEFA 0%, #FFFFFF 50%, #F5A9B8 100%);
+            /* Gradient transition from MLM Teal to Deep Blue */
+            background: linear-gradient(135deg, #078975 0%, #FFFFFF 50%, #3D1A78 100%);
             background-size: 400% 400%;
             animation: softGradient 15s ease infinite;
         }
@@ -70,12 +71,12 @@
             animation: fadeIn 1s ease forwards;
         }
 
-        /* Cute pulsing ring */
+        /* Cute pulsing ring - Updated to MLM Teal */
         .profile-ring {
             position: absolute;
             inset: -8px;
             border-radius: 50%;
-            border: 4px dashed #F5A9B8;
+            border: 4px dashed #26CEAA;
             animation: spinSlow 20s linear infinite;
         }
 
@@ -83,7 +84,7 @@
             position: absolute;
             inset: 0;
             border-radius: 50%;
-            background: radial-gradient(circle, rgba(245,169,184,0.6) 0%, rgba(91,206,250,0) 70%);
+            background: radial-gradient(circle, rgba(38,206,170,0.4) 0%, rgba(80,73,204,0) 70%);
             filter: blur(10px);
             animation: pulse 3s infinite ease-in-out;
         }
@@ -133,10 +134,10 @@
         .delay-3 { animation-delay: 0.3s; }
         .delay-4 { animation-delay: 0.4s; }
 
-        /* Data Tags */
+        /* Data Tags - Colors updated to Teal/Blue */
         .data-tag {
             background-color: #FFFFFF;
-            border: 2px solid #F5A9B8;
+            border: 2px solid #26CEAA;
             color: #7a7a7a;
             border-radius: 20px;
             padding: 6px 16px;
@@ -144,22 +145,22 @@
             font-weight: 700;
             cursor: default; 
             transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            box-shadow: 0 2px 5px rgba(245, 169, 184, 0.2);
+            box-shadow: 0 2px 5px rgba(38, 206, 170, 0.1);
         }
         
         .data-tag:hover {
             transform: translateY(-3px) scale(1.05); 
-            background-color: #F5A9B8;
+            background-color: #26CEAA;
             color: white;
-            box-shadow: 0 5px 15px rgba(245, 169, 184, 0.5); 
+            box-shadow: 0 5px 15px rgba(38, 206, 170, 0.4); 
         }
 
         .tag-special {
-            border-color: #5BCEFA;
+            border-color: #5049CC;
         }
         .tag-special:hover {
-            background-color: #5BCEFA;
-            box-shadow: 0 5px 15px rgba(91, 206, 250, 0.5);
+            background-color: #5049CC;
+            box-shadow: 0 5px 15px rgba(80, 73, 204, 0.4);
         }
 
         /* Social Icons */
@@ -175,7 +176,7 @@
         }
         .social-icon-wrapper:hover {
             transform: translateY(-5px) scale(1.1);
-            box-shadow: 0 8px 15px rgba(245, 169, 184, 0.4);
+            box-shadow: 0 8px 15px rgba(38, 206, 170, 0.3);
         }
         
         .social-icon-filter {
@@ -188,7 +189,8 @@
         }
         
         .social-icon-wrapper:hover img {
-            filter: invert(83%) sepia(21%) saturate(1067%) hue-rotate(295deg) brightness(98%) contrast(93%);
+            /* Changed social hover color to match MLM Blue */
+            filter: invert(31%) sepia(54%) saturate(2333%) hue-rotate(224deg) brightness(92%) contrast(100%);
         }
 
     </style>
@@ -196,11 +198,12 @@
 <body>
 
     <div class="bg-particles">
-        <div class="particle" style="left: 10%; animation-duration: 12s; animation-delay: 0s;">💖</div>
+        <!-- Swapped hearts for Blue/Green themed emojis -->
+        <div class="particle" style="left: 10%; animation-duration: 12s; animation-delay: 0s;">💙</div>
         <div class="particle" style="left: 30%; animation-duration: 15s; animation-delay: 2s;">✨</div>
-        <div class="particle" style="left: 50%; animation-duration: 10s; animation-delay: 5s;">🌸</div>
-        <div class="particle" style="left: 70%; animation-duration: 14s; animation-delay: 1s;">🍬</div>
-        <div class="particle" style="left: 90%; animation-duration: 16s; animation-delay: 4s;">💖</div>
+        <div class="particle" style="left: 50%; animation-duration: 10s; animation-delay: 5s;">🌿</div>
+        <div class="particle" style="left: 70%; animation-duration: 14s; animation-delay: 1s;">💠</div>
+        <div class="particle" style="left: 90%; animation-duration: 16s; animation-delay: 4s;">🌊</div>
     </div>
 
     <div class="profile-wrapper flex flex-col items-center p-10 w-full max-w-lg mx-4">
@@ -211,25 +214,24 @@
             <div class="profile-ring"></div>
             <img 
                 class="avatar-img"
-                src="https://i.pinimg.com/1200x/b7/9d/93/b79d93d2a4a68e16366b712263bb5412.jpg" 
+                src="https://i.pinimg.com/1200x/ac/73/47/ac7347dea0b4f937502e765a95b09e99.jpg" 
                 alt="Maple Fool Profile Picture" 
-                onerror="this.onerror=null; this.src='https://placehold.co/160x160/F5A9B8/FFFFFF?text=Error';"
+                onerror="this.onerror=null; this.src='https://placehold.co/160x160/26CEAA/FFFFFF?text=Error';"
             />
         </div>
 
-        <!-- NAME -->
+        <!-- NAME - Updated with MLM colors: Dark Green, Teal, Blue, Deep Blue -->
         <h1 class="text-5xl font-extrabold mb-4 fade-in delay-2 tracking-wide text-center">
-            <!-- Bisexual Colors: Pink #D60270, Purple #9B4F96, Blue #0038A8 -->
-            <span style="color: #D60270; text-shadow: 2px 2px 0px #FFFFFF;">M</span>
-            <span style="color: #9B4F96; text-shadow: 2px 2px 0px #FFFFFF;">a</span>
-            <span style="color: #0038A8; text-shadow: 2px 2px 0px #FFFFFF;">p</span>
-            <span style="color: #D60270; text-shadow: 2px 2px 0px #FFFFFF;">l</span>
-            <span style="color: #9B4F96; text-shadow: 2px 2px 0px #FFFFFF;">e</span>
+            <span style="color: #078975; text-shadow: 2px 2px 0px #FFFFFF;">M</span>
+            <span style="color: #26CEAA; text-shadow: 2px 2px 0px #FFFFFF;">a</span>
+            <span style="color: #7BADE2; text-shadow: 2px 2px 0px #FFFFFF;">p</span>
+            <span style="color: #5049CC; text-shadow: 2px 2px 0px #FFFFFF;">l</span>
+            <span style="color: #3D1A78; text-shadow: 2px 2px 0px #FFFFFF;">e</span>
             &nbsp;
-            <span style="color: #0038A8; text-shadow: 2px 2px 0px #FFFFFF;">F</span>
-            <span style="color: #D60270; text-shadow: 2px 2px 0px #FFFFFF;">o</span>
-            <span style="color: #9B4F96; text-shadow: 2px 2px 0px #FFFFFF;">o</span>
-            <span style="color: #0038A8; text-shadow: 2px 2px 0px #FFFFFF;">l</span>
+            <span style="color: #078975; text-shadow: 2px 2px 0px #FFFFFF;">F</span>
+            <span style="color: #26CEAA; text-shadow: 2px 2px 0px #FFFFFF;">o</span>
+            <span style="color: #7BADE2; text-shadow: 2px 2px 0px #FFFFFF;">o</span>
+            <span style="color: #5049CC; text-shadow: 2px 2px 0px #FFFFFF;">l</span>
             <span class="text-2xl align-top">✨</span>
         </h1>
 
@@ -238,8 +240,9 @@
             <span class="data-tag">∞ years old</span>
             <span class="data-tag tag-special">Male</span>
             <span class="data-tag">they/them</span>
-            <span class="data-tag" style="background: linear-gradient(90deg, #D60270, #9B4F96, #0038A8); color: white; border: none;">Bisexual</span>
-            <span class="data-tag tag-special">💖 Femboy 💖</span> 
+            <!-- Updated to "Gay" with MLM Linear Gradient -->
+            <span class="data-tag" style="background: linear-gradient(90deg, #078975, #26CEAA, #FFFFFF, #7BADE2, #3D1A78); color: #333; border: none; font-weight: 800; text-shadow: 0px 0px 2px white;">Gay</span>
+            <span class="data-tag tag-special">💙 Femboy 💙</span> 
         </div>
 
         <!-- SOCIAL ICONS -->
@@ -264,4 +267,3 @@
     </div>
 </body>
 </html>
-
